@@ -31,11 +31,11 @@ function debounce(fn, delay) {
 	};
 }
 
-// 等所有的都执行完
+// 同步执行: 等所有脚本都执行完成后再进行回调
 // exec("node test.js", (err, stdout) => {
 // 	console.log(stdout);
 // });
 
-// 流式调用 不需要等待所有都执行完
+// 基于流的形式 执行完就通过流的方式把数据发过来 不需要等待所有都执行完
 // spawn("node", ["test.js"], {
 // });
